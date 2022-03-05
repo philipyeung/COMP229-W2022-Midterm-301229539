@@ -6,7 +6,7 @@
 //  Author's Name  : Kai Hong Yeung
 //  StudentID       : 301229539
 //  Web App name    : COMP229 W2022 MIDTERM Book Application
-//  Date            : 05 Mar 2022
+//  Date            : 06 Mar 2022
 //*******************************************************************
 -->
 
@@ -22,6 +22,8 @@
           <!-- FIX THE ADD BUTTON BELOW -->
           <!-- ------------------------ -->
           <!--<a href="" class="btn btn-primary"><i class="fa fa-plus"></i> Add a book</a>-->          
+          
+          <!-- to the BookDetails page-->
           <a href="/books/add" class="btn btn-primary" role="button"><i class="fa fa-plus"></i> Add a book</a>
 
 
@@ -52,6 +54,8 @@
                     <!-- ------------------------ -->
                     <!-- ADD the EDIT BUTTON HERE -->
                     <!-- ------------------------ -->
+
+                    <!-- to edit book with book id and then refresh the BookDetails page -->
                     <a href="/books/<%= books[count]._id %>" class="btn btn-primary btn-sm">
                     <i class="fas fa-pencil-alt"></i> Edit</a>
                   </td>
@@ -59,7 +63,9 @@
                   <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- ADD the DELETE BUTTON HERE -->
-                    <!-- ------------------------ -->                    
+                    <!-- ------------------------ -->
+                    
+                    <!-- to delete book with book id and then refresh the BookDetails page -->
                     <a href="/books/delete/<%= books[count]._id %>" class="btn btn-danger btn-sm">
                     <i class="fas fa-trash-alt"></i> Delete</a>
 
